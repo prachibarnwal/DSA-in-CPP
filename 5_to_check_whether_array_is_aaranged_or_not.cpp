@@ -5,7 +5,7 @@ int main()
 	int n;
 	cout<<"Enter Size of the Array : ";
 	cin>>n;
-	int as[n], a, d;
+	int as[n], a =  0, d = 0;
 	cout<<"Enter Array Elements : ";
 	for(int i =0;i<n;i++)
 		cin>>as[i];
@@ -17,7 +17,7 @@ int main()
 		else if(as[i] >= as[i+1])
 			d++;
 	}
-	cout<<a<<"\t"<<d<<endl;
+	//cout<<a<<"\t"<<d<<endl;
 	if(a == n - 1)
 		cout<<"Array is Sorted in Ascending Order"<<endl;
 	else if( d == n - 1)
